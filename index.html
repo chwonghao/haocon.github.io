@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,500,0,0" />
+    <title>My Website</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <script>
+        $(function() {
+            $(".toggle").on("click", function() {
+                if ($(".item").hasClass("active")) {
+                    $(".item").removeClass("active");
+                } else {
+                    $(".item").addClass("active");
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li class="logo"><a href="#">HACON</a></li>
+                <li class="item"><a href="#">Home</a></li>
+                <li class="item"><a href="#">About</a></li>
+                <li class="item"><a href="#">Services</a></li>
+                <li class="toggle"><span class="material-symbols-outlined" style="color: white;">menu</span></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="contents">
+        <section class="left-contents">
+            <div>
+                <p>This is paragrams test left contents</p>
+            </div>
+            <article>
+                article
+            </article>
+        </section>
+        <section class="right-contents">
+            <div>
+                <p>right contents</p>
+            </div>
+            <aside>
+                this is aside tag
+            </aside>
+        </section>
+    </div>
+    <footer>
+        <p>© 2023 My Website. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
